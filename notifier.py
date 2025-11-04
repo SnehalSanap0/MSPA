@@ -31,7 +31,7 @@ def send_email_alert(subject, body, recipient=None):
 
 def send_slack_alert(text):
     if not SLACK_WEBHOOK_URL:
-        print('Slack alert skipped — webhook not configured')
+        # print('Slack alert skipped — webhook not configured')
         return False
     try:
         r = requests.post(SLACK_WEBHOOK_URL, json={'text': text}, timeout=5)

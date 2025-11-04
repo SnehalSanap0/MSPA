@@ -27,7 +27,7 @@ def check_once(monitor):
 
 class MonitorWorker:
     """Singleton worker that periodically checks all active monitors.
-    Runs in a background thread so the Streamlit UI is responsive.
+    Runs in a background thread so the UI is responsive.
     """
     def __init__(self):
         self._stop = threading.Event()

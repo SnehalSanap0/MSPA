@@ -7,7 +7,7 @@ import plotly.express as px
 init_db()
 
 st.set_page_config(page_title='API Uptime Monitor', layout='wide')
-st.title('🔍 Streamlit API Uptime Monitor')
+st.title('API Uptime Monitoring')
 
 
 # start background worker (singleton stored in session state)
